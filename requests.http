@@ -1,0 +1,21 @@
+###Create
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Replay",
+  "artist": "Sean Kingston",
+  "album": "Who Knows",
+  "year": 2010
+}
+
+###Update
+PATCH http://localhost:3000/songs/2
+Content-Type: application/json
+
+{
+  "year": 2022
+}
+
+###Delete
+DELETE http://localhost:3000/songs/12
